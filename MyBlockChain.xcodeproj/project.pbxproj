@@ -12,6 +12,10 @@
 		614E377A2018339E002ACC51 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 614E37782018339E002ACC51 /* Main.storyboard */; };
 		614E377C2018339E002ACC51 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 614E377B2018339E002ACC51 /* Assets.xcassets */; };
 		614E377F2018339E002ACC51 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 614E377D2018339E002ACC51 /* LaunchScreen.storyboard */; };
+		614E378720183440002ACC51 /* BlockChain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 614E378620183440002ACC51 /* BlockChain.swift */; };
+		614E378920183515002ACC51 /* Block.swift in Sources */ = {isa = PBXBuildFile; fileRef = 614E378820183515002ACC51 /* Block.swift */; };
+		614E378B20183523002ACC51 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 614E378A20183523002ACC51 /* Transaction.swift */; };
+		614E378E20186A7E002ACC51 /* BlockChainServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 614E378D20186A7E002ACC51 /* BlockChainServer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,11 @@
 		614E377B2018339E002ACC51 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		614E377E2018339E002ACC51 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		614E37802018339E002ACC51 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		614E378620183440002ACC51 /* BlockChain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockChain.swift; sourceTree = "<group>"; };
+		614E378820183515002ACC51 /* Block.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Block.swift; sourceTree = "<group>"; };
+		614E378A20183523002ACC51 /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
+		614E378C20186697002ACC51 /* BridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BridgingHeader.h; sourceTree = "<group>"; };
+		614E378D20186A7E002ACC51 /* BlockChainServer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockChainServer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +69,11 @@
 				614E377B2018339E002ACC51 /* Assets.xcassets */,
 				614E377D2018339E002ACC51 /* LaunchScreen.storyboard */,
 				614E37802018339E002ACC51 /* Info.plist */,
+				614E378620183440002ACC51 /* BlockChain.swift */,
+				614E378820183515002ACC51 /* Block.swift */,
+				614E378A20183523002ACC51 /* Transaction.swift */,
+				614E378C20186697002ACC51 /* BridgingHeader.h */,
+				614E378D20186A7E002ACC51 /* BlockChainServer.swift */,
 			);
 			path = MyBlockChain;
 			sourceTree = "<group>";
@@ -136,8 +150,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				614E378E20186A7E002ACC51 /* BlockChainServer.swift in Sources */,
 				614E37772018339E002ACC51 /* ViewController.swift in Sources */,
+				614E378920183515002ACC51 /* Block.swift in Sources */,
 				614E37752018339E002ACC51 /* AppDelegate.swift in Sources */,
+				614E378720183440002ACC51 /* BlockChain.swift in Sources */,
+				614E378B20183523002ACC51 /* Transaction.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +298,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.komatsushiro.MyBlockChain;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = MyBlockChain/BridgingHeader.h;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -295,6 +314,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.komatsushiro.MyBlockChain;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = MyBlockChain/BridgingHeader.h;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

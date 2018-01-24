@@ -10,6 +10,7 @@
 		614B78232018CC87004AA999 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 614B78222018CC87004AA999 /* RxSwift.framework */; };
 		614B78252018CC91004AA999 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 614B78242018CC91004AA999 /* RxCocoa.framework */; };
 		614B782A2018CD12004AA999 /* RxBlocking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 614B78292018CD12004AA999 /* RxBlocking.framework */; };
+		614B782C2018CDC1004AA999 /* NSLayoutAnchor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 614B782B2018CDC1004AA999 /* NSLayoutAnchor+Extensions.swift */; };
 		614E37752018339E002ACC51 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 614E37742018339E002ACC51 /* AppDelegate.swift */; };
 		614E37772018339E002ACC51 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 614E37762018339E002ACC51 /* ViewController.swift */; };
 		614E377A2018339E002ACC51 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 614E37782018339E002ACC51 /* Main.storyboard */; };
@@ -26,6 +27,7 @@
 		614B78242018CC91004AA999 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
 		614B78272018CD04004AA999 /* Build */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Build; path = Carthage/Build; sourceTree = "<group>"; };
 		614B78292018CD12004AA999 /* RxBlocking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxBlocking.framework; path = Carthage/Build/iOS/RxBlocking.framework; sourceTree = "<group>"; };
+		614B782B2018CDC1004AA999 /* NSLayoutAnchor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSLayoutAnchor+Extensions.swift"; sourceTree = "<group>"; };
 		614E37712018339E002ACC51 /* MyBlockChain.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyBlockChain.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		614E37742018339E002ACC51 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		614E37762018339E002ACC51 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -96,6 +98,7 @@
 				614E378A20183523002ACC51 /* Transaction.swift */,
 				614E378C20186697002ACC51 /* BridgingHeader.h */,
 				614E378D20186A7E002ACC51 /* BlockChainServer.swift */,
+				614B782B2018CDC1004AA999 /* NSLayoutAnchor+Extensions.swift */,
 			);
 			path = MyBlockChain;
 			sourceTree = "<group>";
@@ -195,6 +198,7 @@
 				614E378E20186A7E002ACC51 /* BlockChainServer.swift in Sources */,
 				614E37772018339E002ACC51 /* ViewController.swift in Sources */,
 				614E378920183515002ACC51 /* Block.swift in Sources */,
+				614B782C2018CDC1004AA999 /* NSLayoutAnchor+Extensions.swift in Sources */,
 				614E37752018339E002ACC51 /* AppDelegate.swift in Sources */,
 				614E378720183440002ACC51 /* BlockChain.swift in Sources */,
 				614E378B20183523002ACC51 /* Transaction.swift in Sources */,

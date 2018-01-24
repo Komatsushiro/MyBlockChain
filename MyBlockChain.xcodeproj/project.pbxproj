@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		614B78232018CC87004AA999 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 614B78222018CC87004AA999 /* RxSwift.framework */; };
+		614B78252018CC91004AA999 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 614B78242018CC91004AA999 /* RxCocoa.framework */; };
+		614B782A2018CD12004AA999 /* RxBlocking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 614B78292018CD12004AA999 /* RxBlocking.framework */; };
 		614E37752018339E002ACC51 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 614E37742018339E002ACC51 /* AppDelegate.swift */; };
 		614E37772018339E002ACC51 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 614E37762018339E002ACC51 /* ViewController.swift */; };
 		614E377A2018339E002ACC51 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 614E37782018339E002ACC51 /* Main.storyboard */; };
@@ -19,6 +22,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		614B78222018CC87004AA999 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
+		614B78242018CC91004AA999 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
+		614B78272018CD04004AA999 /* Build */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Build; path = Carthage/Build; sourceTree = "<group>"; };
+		614B78292018CD12004AA999 /* RxBlocking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxBlocking.framework; path = Carthage/Build/iOS/RxBlocking.framework; sourceTree = "<group>"; };
 		614E37712018339E002ACC51 /* MyBlockChain.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyBlockChain.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		614E37742018339E002ACC51 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		614E37762018339E002ACC51 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -38,17 +45,32 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				614B782A2018CD12004AA999 /* RxBlocking.framework in Frameworks */,
+				614B78252018CC91004AA999 /* RxCocoa.framework in Frameworks */,
+				614B78232018CC87004AA999 /* RxSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		614B78212018CC86004AA999 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				614B78292018CD12004AA999 /* RxBlocking.framework */,
+				614B78272018CD04004AA999 /* Build */,
+				614B78242018CC91004AA999 /* RxCocoa.framework */,
+				614B78222018CC87004AA999 /* RxSwift.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		614E37682018339E002ACC51 = {
 			isa = PBXGroup;
 			children = (
 				614E37732018339E002ACC51 /* MyBlockChain */,
 				614E37722018339E002ACC51 /* Products */,
+				614B78212018CC86004AA999 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -88,6 +110,7 @@
 				614E376D2018339E002ACC51 /* Sources */,
 				614E376E2018339E002ACC51 /* Frameworks */,
 				614E376F2018339E002ACC51 /* Resources */,
+				614B78262018CCA3004AA999 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -144,6 +167,25 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		614B78262018CCA3004AA999 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/RxBlocking.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxCocoa.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxSwift.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		614E376D2018339E002ACC51 /* Sources */ = {
@@ -294,6 +336,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 46D7VCBXVA;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = MyBlockChain/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.komatsushiro.MyBlockChain;
@@ -310,6 +356,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 46D7VCBXVA;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = MyBlockChain/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.komatsushiro.MyBlockChain;

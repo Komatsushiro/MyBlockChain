@@ -43,10 +43,11 @@ class BlockChain {
     }
 
     class func validProof(lastProof: Int, proof: Int) -> Bool {
-        guard let guess = String("\(lastProof)\(proof)").data(using: .utf8) else {
-            fatalError()
-        }
-        let guess_hash = guess.sha256()?.hexDigest()
-        return guess_hash?.prefix(4) == "0000"
+//        guard let guess = String("\(lastProof)\(proof)").data(using: .utf8) else {
+//            fatalError()
+//        }
+//        let guess_hash = guess.sha256()?.hexDigest()
+//        return guess_hash?.prefix(4) == "0000"
+        return true
     }
 }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		61437481201C6A9C00E0726E /* ChainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61437480201C6A9C00E0726E /* ChainTableViewCell.swift */; };
 		614B78232018CC87004AA999 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 614B78222018CC87004AA999 /* RxSwift.framework */; };
 		614B78252018CC91004AA999 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 614B78242018CC91004AA999 /* RxCocoa.framework */; };
 		614B782A2018CD12004AA999 /* RxBlocking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 614B78292018CD12004AA999 /* RxBlocking.framework */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		61437480201C6A9C00E0726E /* ChainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChainTableViewCell.swift; sourceTree = "<group>"; };
 		614B78222018CC87004AA999 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
 		614B78242018CC91004AA999 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
 		614B78272018CD04004AA999 /* Build */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Build; path = Carthage/Build; sourceTree = "<group>"; };
@@ -87,6 +89,7 @@
 			children = (
 				614E37742018339E002ACC51 /* AppDelegate.swift */,
 				614E37762018339E002ACC51 /* ViewController.swift */,
+				61437480201C6A9C00E0726E /* ChainTableViewCell.swift */,
 				614E377B2018339E002ACC51 /* Assets.xcassets */,
 				614E377D2018339E002ACC51 /* LaunchScreen.storyboard */,
 				614E37802018339E002ACC51 /* Info.plist */,
@@ -192,6 +195,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				614E378E20186A7E002ACC51 /* BlockChainServer.swift in Sources */,
+				61437481201C6A9C00E0726E /* ChainTableViewCell.swift in Sources */,
 				614E37772018339E002ACC51 /* ViewController.swift in Sources */,
 				614E378920183515002ACC51 /* Block.swift in Sources */,
 				614B782C2018CDC1004AA999 /* NSLayoutAnchor+Extensions.swift in Sources */,
